@@ -14,7 +14,7 @@ const UseStateExample = () => {
         setLoading(false);
       })
       .catch(() => {
-        setError("HATA!! VERİLER ÇEKİLEMEDİ");
+        setError("ERROR!!");
         setLoading(false);
       });
   };

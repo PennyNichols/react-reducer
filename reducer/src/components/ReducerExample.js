@@ -1,5 +1,5 @@
 import { useReducer } from "react";
-import { initialState, reducer } from "./reducer";
+import { initialState, reducer } from "../reducers/DogImageReducer";
 
 const ReducerExample = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
@@ -13,7 +13,7 @@ const ReducerExample = () => {
         dispatch({ type: "SUCCESS", payload: data.message });
       })
       .catch(() => {
-        dispatch({ type: "FAIL", payload: "HATA VERİLER ÇEKİLEMEDİ" });
+        dispatch({ type: "FAIL", payload: "Error" });
       });
   };
   return (
